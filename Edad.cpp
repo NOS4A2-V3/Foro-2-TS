@@ -3,12 +3,12 @@
 #include<windows.h>
 #include<string.h>
 
-int edad,contar,contaredad;
+int edad,contar,contaredad,i;
 float promedad;
 
 int main()
 {
-	do
+	for(i=0;i<=4;i++)
 	{
 		system("cls");
 		fflush(stdin);
@@ -16,8 +16,8 @@ int main()
 		printf("Ingresa la edad: ");
 		scanf("%d",&edad);
 		contaredad+=edad;
-	}while(edad!=0);
+	}
 	
 	promedad=contaredad/contar;
-	printf("El promedio de edad de los alumnos es: %.2f",promedad);
+	printf("%.2f es el promedio de edad de los estudiantes",promedad);
 }
